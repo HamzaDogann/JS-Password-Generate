@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3cc1ff;
+    background-image: linear-gradient(225deg, #0a4597 0%, #002575 50%, #1da372 100%);    
+    color: #fff;
+}
+
+.container {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.display{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background: #fff;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 26px 30px;
+    border-radius: 6px;
+}
+
+.container h1{
+    font-family: 500;
+    font-size: 80px;   
+}
+.container :nth-child(3){
+    font-family: 500;
+    font-size: 35px;   
+    border-bottom: 4px solid #17b47b;
+    padding-bottom: 7px;
+    color: #24b681;
+
+}
+
+.display input{
+    border: 0;
+    outline: 0;
+    font-size: 25px;
+    width: 90%;
+}
+.display #copy-btn{
+    color: #24b681;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#generate-password{
+    border: 0;
+    width: 200px;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #24b681;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s;
+    
+}
+#generate-password:hover{
+    background-color: #05a168;
+}
+
+#generate-password span:nth-child(1){
+font-size: 40px;
+}
+
+
+
+
+
+/* Informations about my links */
+
+.button-container {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.round-button {
+    width: 60px;
+    height: 60px;
+    background-color: #004cc7f5;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px 6px rgba(0, 0, 0, 0.1);
+  
+}
+.round-button span{
+    font-size: 35px;
+}
+
+.round-button:hover {
+    background-color: #0056b3;
+    transition: 0.4s all;
+    box-shadow: 0 4px 16px 6px rgba(0, 0, 0, 0.314);
+}
+
+#info-buttons {
+    position: absolute;
+    top: -30px;
+    right: -100px;
+    display: none;
+    margin: 10px auto;
+    font-weight: 500;
+    transition: transform 0.3s ease; /* Diğer transform etkisini sıfırla */
+    animation: slideIn 0.3s forwards; /* slideIn animasyonunu kullan ve son pozisyonda kal */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(10px, 0); /* X ekseni boyunca 30px kaydır */
+    }
+}
+
+
+
+
+.info-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px 10px;
+    background-color: #e9e9e9;
+    box-shadow: 0 4px 10px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    color: rgb(32, 32, 32);
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease;
+    height: 40px;
+}
+
+.info-button .image{
+    width: 30px;
+    height: 90%;
+    margin-left: 4px;
+
+}
+
+.info-logos{
+    width: 100%;
+    height: 100%;
+
+}
+
+.info-button:hover {
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 424px) {
+    .container h1{
+        font-size: 60px;
+    }
+    .container :nth-child(3){
+        font-family: 500;
+        font-size: 25px;   
+    }
+    .display{
+       width: 90%;
+        padding: 26px 12px;
+    }
+
+}
